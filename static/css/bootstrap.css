@@ -4537,11 +4537,43 @@ nav {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: -50px;
-  right: 0;
+  right: -20px;
   z-index: 2;
 }
 .bio {
   font-family: 'Snell Roundhand';
   color: #555555;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+  margin-left: 90px;
+}
+#timeline {
+  padding-top: 32px;
+  border-left: 5px solid #999999;
+}
+#social-info {
+  height: 40px;
+}
+#social-info .btn {
+  float: left;
+}
+#social-info dl {
+  float: left;
+  height: 40px;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-top: 0;
+}
+#social-info dl dt {
+  float: left;
+  color: #999999;
+  text-shadow: 1px 0 rgba(255, 255, 255, 0.5);
+}
+#social-info dl dd {
+  font-size: 2em;
+  margin-left: 0;
+  font-weight: 200;
+}
+#follow-btn {
+  margin-left: -66px;
+  width: 100px;
 }
