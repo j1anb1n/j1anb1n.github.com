@@ -17,8 +17,8 @@
 @grayLight:             #999;
 @grayLighter:           #eee;
 @white:                 #fff;
-
-
+@fancyGray:             rgb(188, 191, 197);
+@baseGray:              rgb(250,250,250);
 // Accent colors
 // -------------------------
 @blue:                  #049cdb;
@@ -48,6 +48,19 @@
 @sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-face {
+  font-family: 'Alex Brush';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Alex Brush'), local('AlexBrush-Regular'), url('@{fontPath}/alex-brush.woff') format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Raleway-Thin'), url('@{fontPath}/raleway.woff') format('woff');
+}
+
 
 @baseFontSize:          13px;
 @baseFontFamily:        @sansFontFamily;
