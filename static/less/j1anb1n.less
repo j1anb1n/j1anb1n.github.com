@@ -61,7 +61,7 @@ nav {
         float: left;
         .border-radius(3px);
         color: @white;
-        text-shadow: 0 -1px  0 @black;
+        text-shadow: 0 -1px  0 fade(@black, 50%);
         #gradient > .vertical(#7cc8ff, #3595de);
         &:hover {
             #gradient > .vertical(#92d7ff, #339cef);
@@ -91,6 +91,7 @@ nav {
     width: 100px;
 }
 .snippet {
+    margin-bottom: 32px;
     > i {
         .square(46px);
         border: 2px solid @fancyGray;
@@ -133,5 +134,28 @@ nav {
         float: right;
         .rotate(-30deg);
         margin-top: 10px;
+    }
+}
+.snippet .content.autumn {
+    position: relative;
+    img {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        // -webkit-filter: blur(1px);
+        z-index: 1;
+    }
+    p {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        font-size: 32px;
+        line-height: 40px;
+        // background: fade(@black, 10%);
+        padding: 0 20px 20px 0; 
+        margin: 0 0 100px 0;
+        font-family: 'Raleway', cursive;
+        color: @white;
+        text-shadow: 1px 0 0 fade(@black, 50%);
     }
 }
