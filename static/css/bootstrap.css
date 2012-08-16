@@ -4648,12 +4648,12 @@ nav {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
 }
-.snippet .content.letter {
+.snippet.letter .content {
   background: url(../img/letter.png) repeat-x;
   min-height: 180px;
   background-color: #f8f5f5;
 }
-.snippet .content.letter p {
+.snippet.letter .content p {
   float: left;
   font-family: 'Alex Brush', cursive;
   margin: 50px 0 0 50px;
@@ -4661,7 +4661,7 @@ nav {
   line-height: 38px;
   text-shadow: 0 1px 0 #ffffff;
 }
-.snippet .content.letter .postmark {
+.snippet.letter .content .postmark {
   width: 100px;
   float: right;
   -webkit-transform: rotate(-30deg);
@@ -4671,17 +4671,17 @@ nav {
   transform: rotate(-30deg);
   margin-top: 10px;
 }
-.snippet .content.autumn {
+.snippet.autumn .content {
   position: relative;
 }
-.snippet .content.autumn img {
+.snippet.autumn .content img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
 }
-.snippet .content.autumn p {
+.snippet.autumn .content p {
   display: inline-block;
   position: relative;
   z-index: 2;
@@ -4692,4 +4692,21 @@ nav {
   font-family: 'Raleway', cursive;
   color: #ffffff;
   text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5);
+}
+.snippet.note .content p {
+  height: 180px;
+  padding: 0;
+  margin: 0;
+  line-height: 32px;
+  font-size: 18px;
+}
+.snippet.note .content p:before {
+  display: block;
+  content: "";
+  min-height: 200px;
+  width: 1px;
+  float: left;
+  margin: -10px 10px;
+  border-right: 1px solid #f5b2bf;
+  border-left: 1px solid #f5b2bf;
 }

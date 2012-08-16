@@ -117,7 +117,7 @@ nav {
         padding: 10px 20px;
     }
 }
-.snippet .content.letter {
+.snippet.letter .content {
     background: url(../img/letter.png) repeat-x;
     min-height: 180px;
     background-color: #f8f5f5;
@@ -136,7 +136,7 @@ nav {
         margin-top: 10px;
     }
 }
-.snippet .content.autumn {
+.snippet.autumn .content {
     position: relative;
     img {
         position: absolute;
@@ -157,5 +157,24 @@ nav {
         font-family: 'Raleway', cursive;
         color: @white;
         text-shadow: 1px 0 0 fade(@black, 50%);
+    }
+}
+.snippet.note {
+    .content {
+        p {
+            height: 180px;
+            padding: 0; margin: 0;
+            line-height: 32px;
+            font-size: 18px;
+            &:before {
+                display: block;
+                content: "";
+                min-height: 200px;width: 1px;
+                float: left;
+                margin: -10px 10px;
+                border-right: 1px solid rgb(245, 178, 191);
+                border-left: 1px solid rgb(245, 178, 191);
+            }
+        }
     }
 }
