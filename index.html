@@ -5,74 +5,62 @@
     <link rel="stylesheet" href="/static/css/bootstrap.css">
     <body>
         <header>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="span2">
-                        <img src="/static/img/avatar.png" alt="j1anb1n" id="avatar">
-                    </div>
-                </div>
+            <div class="container">
+                <img src="/static/img/avatar.png" alt="j1anb1n" id="avatar">
             </div>
+            <nav class='navbar'>
+                <div class="container">
+                    <ul class='nav'>
+                        <li><a href="#"><i class="icon-github"></i>Github</a></li>
+                        <li><a href="#"><i class="icon-twitter"></i>Twitter</a></li>
+                        <li><a href="#"><i class='social-icon'>d</i>Dribbble</a></li>
+                    </ul>
+                </div>
+            </nav>
         </header>
-        <nav class='navbar'>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="span10 offset2">
-                        <ul class='nav'>
-                            <li><a href="#"><i class="icon-github"></i>Github</a></li>
-                            <li><a href="#"><i class="icon-twitter"></i>Twitter</a></li>
-                            <li><a href="#"><i class="icon-facebook"></i>Facebook</a></li>
-                        </ul>
+        <div class="container">
+            <h3 class='bio'>Javascript Programer, coding for food...</h3>
+            <div id="social-info">
+                <a href="#" class="btn btn-large btn-follow" id="follow-btn">
+                    <i class="icon-plus"></i> Follow Me !
+                </a>
+                <dl>
+                    <dt>Following</dt>
+                    <dd>110</dd>
+                </dl>
+                <dl>
+                    <dt>Follower</dt>
+                    <dd>100</dd>
+                </dl>
+                <dl>
+                    <dt>Tweets</dt>
+                    <dd>40</dd>
+                </dl>
+            </div>
+            <div id="timeline" class="clearfix">
+                <div class="snippet letter">
+                    <i class="icon-pencil"></i>
+                    <div class="content">
+                        <p>
+                            Especially for you~</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            @Aiheihy
+                        </p>
+                        <img src="/static/img/postmark.png" alt="postmark" class="postmark">
                     </div>
                 </div>
-            </div>
-        </nav>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="span11 offset1">
-                    <h3 class='bio'>Javascript Programer, coding for food...</h3>
-                    <div id="social-info">
-                        <a href="#" class="btn btn-large btn-follow" id="follow-btn">
-                            <i class="icon-plus"></i> Follow Me !
-                        </a>
-                        <dl>
-                            <dt>Following</dt>
-                            <dd>110</dd>
-                        </dl>
-                        <dl>
-                            <dt>Follower</dt>
-                            <dd>100</dd>
-                        </dl>
-                        <dl>
-                            <dt>Tweets</dt>
-                            <dd>40</dd>
-                        </dl>
+                <div class="snippet autumn">
+                    <i class="icon-leaf"></i>
+                    <div class="content">
+                        <p>Fall, <br>without u.</p>
+                        <img src="/static/img/autumn.jpg" alt="Autumn, finally.">
                     </div>
-                    <div id="timeline" class="clearfix">
-                        <div class="snippet letter">
-                            <i class="icon-pencil"></i>
-                            <div class="content">
-                                <p>
-                                    Especially for you~</br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    @Aiheihy
-                                </p>
-                                <img src="/static/img/postmark.png" alt="postmark" class="postmark">
-                            </div>
-                        </div>
-                        <div class="snippet autumn">
-                            <i class="icon-leaf"></i>
-                            <div class="content">
-                                <p>Fall, <br>without u.</p>
-                                <img src="/static/img/autumn.jpg" alt="Autumn, finally.">
-                            </div>
-                        </div>
-                        <div class="snippet note">
-                            <i class="icon-note"></i>
-                            <div class="content">
-                                <p>不要说话。</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="snippet note">
+                    <i class="icon-note"></i>
+                    <div class="content">
+                        <p>不要说话。</p>
                     </div>
                 </div>
             </div>

@@ -13,36 +13,36 @@ header {
     background: url(../img/background-1.jpg) no-repeat 0 60%;
     background-size: 100%;
     position: relative;
-    .container-fluid {
-        height: 100%;
-        .row {
-            height: 100%;
-            .span2 {
-                position: relative;
-                height: 100%;
-            }
-        }
+    & > .container {
+        width: 940px; height: 100%;
     }
 }
-nav {
+nav.navbar {
     height: 40px;
     background: fade(@black, 50%);
-    margin-top: -40px;
-    position: relative;
-    z-index: 1;
+    position: absolute;
     #gradient > .vertical(fade(@black, 5%), fade(@black, 10%));
     border-top: solid 1px fade(#eee, 50%);
+    bottom: 0;
     .box-shadow(0 -1px 0 fade(@black, 30%));
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    & > .container {
+        width: 940px;
+    }
+    .nav {
+        margin-left: 80px;
+    }
 }
 #avatar {
     .square(140px);
-    .border-radius(5px);
     background: @white;
-    padding: 6px;
+    padding: 5px;
     .box-shadow(0 0 3px fade(@black, 50%));
-    position: absolute;
-    bottom: -50px; right: -20px;
+    position: relative;
     z-index: 2;
+    margin: 100px 0 0 -75px;
 }
 .bio{ 
     font-family: 'Raleway', cursive;
@@ -52,11 +52,11 @@ nav {
 }
 #timeline {
     padding-top: 32px;
-    border-left: 1px solid @grayLighter;
+    border-left: 3px solid @grayLighter;
 }
 #social-info {
     height: 40px;
-    margin-top: 20px;
+    margin-top: 40px;
     .btn-follow {
         float: left;
         .border-radius(3px);
@@ -101,7 +101,7 @@ nav {
         line-height: 48px;
         text-align: center;
         padding: 0;
-        margin-left: -25px;
+        margin-left: -27px;
         background: @baseGray;
         color: @fancyGray;
         float: left;
