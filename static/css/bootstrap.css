@@ -4512,7 +4512,6 @@ header {
   position: relative;
 }
 header  > .container {
-  width: 940px;
   height: 100%;
 }
 nav.navbar {
@@ -4714,4 +4713,20 @@ nav.navbar .nav {
   margin: -10px 10px;
   border-right: 1px solid #f5b2bf;
   border-left: 1px solid #f5b2bf;
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+  
 }
